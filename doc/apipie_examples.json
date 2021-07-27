@@ -1,0 +1,48 @@
+{
+  "apipies#index": [
+    {
+      "verb": "GET",
+      "path": "/apipie/1.0/cashbacks.html",
+      "versions": [
+
+      ],
+      "query": null,
+      "request_data": null,
+      "response_data": "<!DOCTYPE html>\n<html>\n<head>\n  <title>API documentation</title>\n  <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"/>\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link type='text/css' rel='stylesheet' href='/apipie/stylesheets/bundled/bootstrap.min.css'/>\n<link type='text/css' rel='stylesheet' href='/apipie/stylesheets/bundled/prettify.css'/>\n<link type='text/css' rel='stylesheet' href='/apipie/stylesheets/bundled/bootstrap-responsive.min.css'/>\n  <link type='text/css' rel='stylesheet' href='/apipie/stylesheets/application.css'/>\n  <!-- IE6-8 support of HTML5 elements -->\n  <!--[if lt IE 9]>\n    <script src=\"//html5shim.googlecode.com/svn/trunk/html5.js\"></script>\n  <![endif]-->\n</head>\n<body>\n  <div class=\"container-fluid\">\n    <div class=\"row-fluid\">\n      <div id='container'>\n        <ul class='breadcrumb'>\n  <li>\n    <a href='/apipie/1.0.html'>TouristCashback 1.0</a>\n    <span class='divider'>/</span>\n  </li>\n  <li class='active'>\n    Cashbacks\n    \n  </li>\n  \n</ul>\n\n<div class='page-header'>\n  <h1>\n    Cashbacks\n    <br>\n    <small></small>\n  </h1>\n</div>\n\n\n\n\n\n\n<div class='accordion' id='accordion'>\n\n    <hr>\n    <div class='pull-right small'>\n      <a href='/apipie/1.0/cashbacks/index.html'> >>> </a>\n    </div>\n    <div>\n        <h2>\n          <a href='#description-index'\n           class='accordion-toggle'\n           data-toggle='collapse'\n           data-parent='#accordion'>\n            GET /api/v1/cashbacks\n          </a>\n          <br>\n          <small>Return cashback balance and history</small>\n        </h2>\n    </div>\n\n\n    <div id='description-index' class='collapse accordion-body'>\n      \n\n\n\n\n\n\n  <h3>Headers</h3>\n  <table class='table'>\n    <thead>\n      <tr>\n        <th>Header name</th>\n        <th>Description</th>\n      </tr>\n    </thead>\n    <tbody>\n        <tr>\n          <td>\n            <strong>Authorization </strong><br>\n            <small>\n              required\n            </small>\n          </td>\n          <td>\n            Bearer token\n          </td>\n        </tr>\n    </tbody>\n  </table>\n\n\n    </div>\n</div>\n\n\n        \n      </div>\n    </div>\n    <hr>\n    <footer></footer>\n  </div>\n  <script type='text/javascript' src='/apipie/javascripts/bundled/jquery.js'></script>\n<script type='text/javascript' src='/apipie/javascripts/bundled/bootstrap-collapse.js'></script>\n<script type='text/javascript' src='/apipie/javascripts/bundled/prettify.js'></script>\n<script type='text/javascript' src='/apipie/javascripts/apipie.js'></script>\n</body>\n</html>\n",
+      "code": 200,
+      "show_in_doc": 0,
+      "recorded": true
+    }
+  ],
+  "cashbacks#index": [
+    {
+      "verb": "GET",
+      "path": "/api/v1/cashbacks",
+      "versions": [
+        "1.0"
+      ],
+      "query": null,
+      "request_data": null,
+      "response_data": {
+        "tourist": {
+          "cashback_balance": "38.5",
+          "cashback_history": [
+            {
+              "cashback_received": "25.0",
+              "cashback_spent": "0.0",
+              "date": "2021-07-27T13:29:11.548Z"
+            },
+            {
+              "cashback_received": "13.5",
+              "cashback_spent": "0.0",
+              "date": "2021-07-27T13:29:11.590Z"
+            }
+          ]
+        }
+      },
+      "code": 200,
+      "show_in_doc": 1,
+      "recorded": true
+    }
+  ]
+}

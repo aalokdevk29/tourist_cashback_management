@@ -16,19 +16,12 @@ TICKETS = [{ place_name: 'Ecological Park', price: 100, cashback: 2 },
   { place_name: 'Myterious Lagoon', price: 150, cashback: 0 }]
 
 
-TOURISTS = [{ name: 'Tourist 1', email: 'tourist1@yopmail.com' },
-            { name: 'Tourist 2', email: 'tourist2@yopmail.com' }]
-
-PURCHASES = [[{ }
-], []]
+TOURISTS = [{ name: 'Tourist 1', email: 'tourist1@yopmail.com', password: 'password' },
+            { name: 'Tourist 2', email: 'tourist2@yopmail.com', password: 'password' }]
 
 Supplier.destroy_all
 Ticket.destroy_all
 Tourist.destroy_all
-# create_suppliers
-# create_tickets
-# create_tourists
-# create_purchases
 
 Supplier.create(SUPPLIERS)
 
