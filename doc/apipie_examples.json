@@ -2,13 +2,13 @@
   "apipies#index": [
     {
       "verb": "GET",
-      "path": "/apipie/1.0/cashbacks.html",
+      "path": "/apipie/1.0/sessions/create.html",
       "versions": [
 
       ],
       "query": null,
       "request_data": null,
-      "response_data": "<!DOCTYPE html>\n<html>\n<head>\n  <title>API documentation</title>\n  <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"/>\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link type='text/css' rel='stylesheet' href='/apipie/stylesheets/bundled/bootstrap.min.css'/>\n<link type='text/css' rel='stylesheet' href='/apipie/stylesheets/bundled/prettify.css'/>\n<link type='text/css' rel='stylesheet' href='/apipie/stylesheets/bundled/bootstrap-responsive.min.css'/>\n  <link type='text/css' rel='stylesheet' href='/apipie/stylesheets/application.css'/>\n  <!-- IE6-8 support of HTML5 elements -->\n  <!--[if lt IE 9]>\n    <script src=\"//html5shim.googlecode.com/svn/trunk/html5.js\"></script>\n  <![endif]-->\n</head>\n<body>\n  <div class=\"container-fluid\">\n    <div class=\"row-fluid\">\n      <div id='container'>\n        <ul class='breadcrumb'>\n  <li>\n    <a href='/apipie/1.0.html'>TouristCashback 1.0</a>\n    <span class='divider'>/</span>\n  </li>\n  <li class='active'>\n    Cashbacks\n    \n  </li>\n  \n</ul>\n\n<div class='page-header'>\n  <h1>\n    Cashbacks\n    <br>\n    <small></small>\n  </h1>\n</div>\n\n\n\n\n\n\n<div class='accordion' id='accordion'>\n\n    <hr>\n    <div class='pull-right small'>\n      <a href='/apipie/1.0/cashbacks/index.html'> >>> </a>\n    </div>\n    <div>\n        <h2>\n          <a href='#description-index'\n           class='accordion-toggle'\n           data-toggle='collapse'\n           data-parent='#accordion'>\n            GET /api/v1/cashbacks\n          </a>\n          <br>\n          <small>Return cashback balance and history</small>\n        </h2>\n    </div>\n\n\n    <div id='description-index' class='collapse accordion-body'>\n      \n\n\n\n\n\n\n  <h3>Headers</h3>\n  <table class='table'>\n    <thead>\n      <tr>\n        <th>Header name</th>\n        <th>Description</th>\n      </tr>\n    </thead>\n    <tbody>\n        <tr>\n          <td>\n            <strong>Authorization </strong><br>\n            <small>\n              required\n            </small>\n          </td>\n          <td>\n            Bearer token\n          </td>\n        </tr>\n    </tbody>\n  </table>\n\n\n    </div>\n</div>\n\n\n        \n      </div>\n    </div>\n    <hr>\n    <footer></footer>\n  </div>\n  <script type='text/javascript' src='/apipie/javascripts/bundled/jquery.js'></script>\n<script type='text/javascript' src='/apipie/javascripts/bundled/bootstrap-collapse.js'></script>\n<script type='text/javascript' src='/apipie/javascripts/bundled/prettify.js'></script>\n<script type='text/javascript' src='/apipie/javascripts/apipie.js'></script>\n</body>\n</html>\n",
+      "response_data": "<!DOCTYPE html>\n<html>\n<head>\n  <title>API documentation</title>\n  <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"/>\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link type='text/css' rel='stylesheet' href='/apipie/stylesheets/bundled/bootstrap.min.css'/>\n<link type='text/css' rel='stylesheet' href='/apipie/stylesheets/bundled/prettify.css'/>\n<link type='text/css' rel='stylesheet' href='/apipie/stylesheets/bundled/bootstrap-responsive.min.css'/>\n  <link type='text/css' rel='stylesheet' href='/apipie/stylesheets/application.css'/>\n  <!-- IE6-8 support of HTML5 elements -->\n  <!--[if lt IE 9]>\n    <script src=\"//html5shim.googlecode.com/svn/trunk/html5.js\"></script>\n  <![endif]-->\n</head>\n<body>\n  <div class=\"container-fluid\">\n    <div class=\"row-fluid\">\n      <div id='container'>\n        <ul class='breadcrumb'>\n  <li>\n    <a href='/apipie/1.0.html'>TouristCashback 1.0</a>\n    <span class='divider'>/</span>\n  </li>\n  <li>\n    <a href='/apipie/1.0/sessions.html'>\n      Sessions\n      \n    </a>\n    <span class='divider'>/</span>\n  </li>\n  <li class='active'>create</li>\n  \n\n</ul>\n\n  <div class='page-header'>\n    <h1>\n      POST /tourist/login\n      <br>\n      <small>Login User</small>\n    </h1>\n  </div>\n\n<div>\n\n  \n\n\n\n\n  <h2>Examples</h2>\n    <pre class=\"prettyprint\">POST /tourists/login.json\ntourist%5Bemail%5D=tourist1%40yopmail.com&amp;tourist%5Bpassword%5D=password\n200\n{\n  &quot;tourist&quot;: {\n    &quot;id&quot;: 1,\n    &quot;name&quot;: &quot;Tourist 1&quot;,\n    &quot;email&quot;: &quot;tourist1@yopmail.com&quot;,\n    &quot;cashback&quot;: &quot;38.5&quot;,\n    &quot;created_at&quot;: &quot;2021-07-27T13:29:11.198Z&quot;,\n    &quot;updated_at&quot;: &quot;2021-07-27T13:29:11.198Z&quot;\n  },\n  &quot;token&quot;: &quot;eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZXhwIjoxNjMyNTkwMDUxfQ.6KIf_WGckNfVBacUZZG5JgzPgFT8np2GReKKznDkWD8&quot;\n}</pre>\n\n  <h2>Params</h2>\n  <table class='table'>\n    <thead>\n      <tr>\n        <th>Param name</th>\n        <th>Description</th>\n      </tr>\n    </thead>\n    <tbody>\n        <tr style='background-color:rgb(255,255,255);'>\n    <td>\n      <strong>tourist </strong><br>\n      <small>\n        optional\n        \n      </small>\n    </td>\n    <td>\n      \n<p>Tourist login details</p>\n\n        <p><strong>Validations:</strong></p>\n        <ul>\n            <li>\n<p>Must be a Hash</p>\n</li>\n        </ul>\n\n    </td>\n\n  </tr>\n\n    <tr style='background-color:rgb(250,250,250);'>\n    <td>\n      <strong>tourist[email] </strong><br>\n      <small>\n        required\n        \n      </small>\n    </td>\n    <td>\n      \n<p>Email for login</p>\n\n        <p><strong>Validations:</strong></p>\n        <ul>\n            <li>\n<p>Must be a String</p>\n</li>\n        </ul>\n\n    </td>\n\n  </tr>\n\n  \n  <tr style='background-color:rgb(250,250,250);'>\n    <td>\n      <strong>tourist[password] </strong><br>\n      <small>\n        required\n        \n      </small>\n    </td>\n    <td>\n      \n<p>Password for login</p>\n\n        <p><strong>Validations:</strong></p>\n        <ul>\n            <li>\n<p>Must be a String</p>\n</li>\n        </ul>\n\n    </td>\n\n  </tr>\n\n  \n\n\n    </tbody>\n  </table>\n\n\n\n</div>\n\n\n        \n      </div>\n    </div>\n    <hr>\n    <footer></footer>\n  </div>\n  <script type='text/javascript' src='/apipie/javascripts/bundled/jquery.js'></script>\n<script type='text/javascript' src='/apipie/javascripts/bundled/bootstrap-collapse.js'></script>\n<script type='text/javascript' src='/apipie/javascripts/bundled/prettify.js'></script>\n<script type='text/javascript' src='/apipie/javascripts/apipie.js'></script>\n</body>\n</html>\n",
       "code": 200,
       "show_in_doc": 0,
       "recorded": true
@@ -41,6 +41,50 @@
         }
       },
       "code": 200,
+      "show_in_doc": 1,
+      "recorded": true
+    }
+  ],
+  "sessions#create": [
+    {
+      "verb": "POST",
+      "path": "/tourists/login.json",
+      "versions": [
+        "1.0"
+      ],
+      "query": null,
+      "request_data": "tourist[email]=tourist1@yopmail.com&tourist[password]=password",
+      "response_data": {
+        "tourist": {
+          "id": 1,
+          "name": "Tourist 1",
+          "email": "tourist1@yopmail.com",
+          "cashback": "38.5",
+          "created_at": "2021-07-27T13:29:11.198Z",
+          "updated_at": "2021-07-27T13:29:11.198Z"
+        },
+        "token": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZXhwIjoxNjMyNTkwMDUxfQ.6KIf_WGckNfVBacUZZG5JgzPgFT8np2GReKKznDkWD8"
+      },
+      "code": 200,
+      "show_in_doc": 1,
+      "recorded": true
+    },
+    {
+      "verb": "POST",
+      "path": "/tourists/login",
+      "versions": [
+        "1.0"
+      ],
+      "query": null,
+      "request_data": "tourist%5Bemail%5D=tourist1%40yopmail.com&tourist%5Bpassword%5D=password1",
+      "response_data": {
+        "errors": {
+          "email or password": [
+            "is invalid"
+          ]
+        }
+      },
+      "code": 422,
       "show_in_doc": 1,
       "recorded": true
     }
