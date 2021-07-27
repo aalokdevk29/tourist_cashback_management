@@ -1,24 +1,29 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Ruby version
+* 2.7.1
 
-Things you may want to cover:
+### Rails version
+* 6.1.4
 
-* Ruby version
+### Configuration
 
-* System dependencies
+* `git clone https://github.com/aalokdevk29/tourist_cashback_management.git`
+* `cd tourist_cashback_management`
+* `bundle install`
 
-* Configuration
+### Database Management
+* `rails db:create`
+* `rails db:migrate`
+* `rails db:seed`
 
-* Database creation
+### How to run the server
+* `rails s`
+* Testing user details: `tourist1@yopmail.com / password`
 
-* Database initialization
 
-* How to run the test suite
+### API doc url
+* `http://localhost:3000/apipie`
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### How to run the test suite
+* `rspec`
